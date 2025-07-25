@@ -1,7 +1,5 @@
 # Area Under Polynomial Function Calculator
 
-![Java CI with Maven](https://github.com/<your_username>/area-under-polynomial-function/workflows/Java%20CI%20with%20Maven/badge.svg)  <!-- Replace <your_username> and area-under-polynomial-function with your repo details -->
-
 This Java program calculates the approximate area under the graph of a polynomial function using the trapezoidal rule.
 
 ## Features
