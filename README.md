@@ -1,78 +1,31 @@
-# Function Area Calculator
+# Area Under Polynomial Function Calculator
 
-This repository contains a simple Java program that calculates the area under the graph of a polynomial function. The program uses numerical integration (the trapezoidal rule) to approximate the area between two points on the x-axis.
+![Java CI with Maven](https://github.com/<your_username>/area-under-polynomial-function/workflows/Java%20CI%20with%20Maven/badge.svg)  <!-- Replace <your_username> and area-under-polynomial-function with your repo details -->
+
+This Java program calculates the approximate area under the graph of a polynomial function using the trapezoidal rule.
 
 ## Features
 
-- **Supports polynomial functions of any degree.**
-- **Interactive console interface:** Users input the degree and coefficients of the polynomial.
-- **Customizable integration interval and accuracy:** Users set the start and end points of the interval and the number of subdivisions for numerical integration.
-- **Displays the polynomial function and the computed area.**
+*   Calculates the area under the graph of any polynomial function.
+*   Takes user input for the coefficients of the polynomial, the interval of integration, and the number of intervals to use for the approximation.
+*   Uses the trapezoidal rule for numerical integration.
+*   Provides a formatted output of the calculated area.
+*   Calculates the absolute value of the function in order to calculate the area above the x axis.
 
 ## How It Works
 
-1. The program prompts the user for the degree of the polynomial.
-2. The user enters the coefficients for each term.
-3. The user specifies the start and end of the interval over which to calculate the area.
-4. The user sets the number of intervals (higher numbers mean greater accuracy but longer computation time).
-5. The program computes the area under the function using the trapezoidal rule and displays the result.
+The program prompts the user for the degree and coefficients of the polynomial function, the interval (start and end points), and the number of intervals to use for the approximation. It then calculates the area under the curve using the trapezoidal rule, which approximates the area by dividing the interval into a number of trapezoids and summing their areas.  The `getValueFunction()` method calculates the absolute value of the polynomial for a given `x` value, ensuring that the area calculated is above the x-axis.
 
-## Example
-
-```
-Program liczy pole pod wykresem funkcji
-Podaj stopień wielomianu
-2
-Podaj współczynniki wielomianu w ilości 3
-1
--3
-2
-f(x) = 1.0x^2 + -3.0x^1 + 2.0x^0 + 
-Podaj początek i koniec przedziału
-0
-3
-Podaj liczbę przedziałów (im większa to dokładność jest większa, lecz czas się przedłuża)
-1000
-Pole pod wykresem funkcji wynosi 9.000
-```
-
-## How to Run
+## Getting Started
 
 ### Prerequisites
 
-- Java Development Kit (JDK) 8 or higher
+*   Java Development Kit (JDK) installed (version 8 or later)
+*   Maven (optional, for building and running with Maven)
 
-### Cloning the Repository
+### Cloning the repository
 
-Open your terminal and run:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-cd YOUR_REPOSITORY_NAME
-```
-
-### Compiling and Running
+To clone this repository to your local machine, use the following command:
 
 ```bash
-javac Main.java
-java Main
-```
-
-Follow the prompts in your console to input the polynomial and interval details.
-
-## Code Overview
-
-- `getCoefficients()`: Reads the degree and coefficients of the polynomial from user input.
-- `printFunction(coefficients)`: Prints the polynomial equation in human-readable form.
-- `calculateFunctionArea(coefficients, start, end, intervals)`: Uses the trapezoidal rule to compute the approximate area under the curve.
-- `getValueFunction(coefficients, valueX)`: Evaluates the polynomial at a given x-value.
-- **Main method:** Coordinates user input and displays the result.
-
-## Notes
-
-- The function always computes the absolute value for the area, so it works for functions that may cross the x-axis.
-- Increasing the number of intervals increases accuracy but also computation time.
-
-## License
-
-This project is open-source and free to use for educational purposes.
+git clone https://github.com/<your_username>/area-under-polynomial-function.git
