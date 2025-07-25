@@ -21,9 +21,3 @@ The program prompts the user for the degree and coefficients of the polynomial f
 *   Java Development Kit (JDK) installed (version 8 or later)
 *   Maven (optional, for building and running with Maven)
 
-### Cloning the repository
-
-To clone this repository to your local machine, use the following command:
-
-```bash
-git clone https://github.com/<your_username>/area-under-polynomial-function.git
