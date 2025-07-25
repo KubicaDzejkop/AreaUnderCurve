@@ -1,4 +1,4 @@
-# Area Under Polynomial Function Calculator
+# Area Under Curve Function Calculator
 
 This Java program calculates the approximate area under the graph of a polynomial function using the trapezoidal rule.
 
